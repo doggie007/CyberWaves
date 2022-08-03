@@ -5,6 +5,13 @@ import vuetify from "./plugins/vuetify";
 
 Vue.config.productionTip = false;
 
+const DEFAULT_TITLE = "CyberWaves";
+
+router.afterEach((to, from) => {
+  Vue.nextTick(() => {
+    document.title = to.meta.title || DEFAULT_TITLE;
+  });
+});
 new Vue({
   router,
   vuetify,

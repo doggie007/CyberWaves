@@ -1,53 +1,86 @@
 <template>
-	<v-content>
-		<!-- <h1>This is an about page</h1> -->
-		<section id="introduction">
-			<v-container>
-				<v-row>
-					<v-col cols="3">
-						<v-card class="d-inline-flex pa-2">
-							<p>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
-								dolores blanditiis quibusdam earum. Laboriosam nobis nihil
-								aliquam eos laborum eius?
-							</p>
-						</v-card>
-					</v-col>
-					<v-col cols="6">
-						<v-card outlined tile>
-							<h3 class="display-2 font-weight-bold mb-3 text-uppercase">
-								Our Vision
-							</h3>
-							<v-responsive class="ml-10 mb-8 float-left" width="56">
-								<v-divider class="mb-1"></v-divider>
-								<v-divider></v-divider>
-							</v-responsive>
-							<p class="title font-weight-light mb-5 pa-2">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-								perspiciatis iste quibusdam, atque molestiae odio eum
-								consequuntur autem numquam alias ab exercitationem vel! In,
-								suscipit consequatur perferendis sit quas atque modi explicabo
-								voluptas eveniet, doloremque facilis velit. Nobis quod, dolorem
-								quisquam excepturi enim veritatis cupiditate fugiat ipsam
-								tenetur provident numquam! Eligendi cupiditate nostrum inventore
-								libero aspernatur et nihil ea quidem dignissimos voluptates
-								dolor, ipsam labore cum omnis delectus at sint doloribus vero,
-								earum nemo quaerat vitae ratione nulla itaque? Debitis veritatis
-								quis est quo, modi libero et assumenda necessitatibus
-								consequatur distinctio similique obcaecati dolores possimus ex
-								odit suscipit, optio impedit.
-							</p>
-						</v-card>
-					</v-col>
-				</v-row>
-			</v-container>
-		</section>
-	</v-content>
+  <v-content>
+    <section id="our-vision">
+      <v-container
+        fluid
+        class="pa-10"
+        style="
+          background-image: linear-gradient(to bottom left, #dbfcff, #fddcc356);
+        "
+        :style="{ height: 'calc(100vh - ' + $vuetify.application.top + 'px)' }"
+      >
+        <v-layout fill-height>
+          <v-flex align-self-center class="d-flex justify-center">
+            <v-img
+              height="600"
+              width="20vw"
+              min-width="250"
+              max-width="400"
+              transition="slide-x-transition"
+              :src="require('../assets/rocky-beach.jpg')"
+            ></v-img>
+          </v-flex>
+          <v-flex
+            align-self-center
+            class="d-flex justify-center"
+            style="margin-left: -300px"
+          >
+            <v-card
+              outlined
+              class="rounded-tl-xl rounded-br-xl"
+              width="90%"
+              max-width="800"
+              color="#274156"
+              dark
+            >
+              <v-card-title
+                class="display-2 font-weight-bold mb-3 text-uppercase"
+                >Our Vision</v-card-title
+              >
+              <v-card-subtitle>
+                <v-responsive class="mb-0" width="56">
+                  <v-divider
+                    class="mb-1"
+                    style="background: whitesmoke"
+                  ></v-divider>
+                  <v-divider style="background: white"></v-divider>
+                </v-responsive>
+              </v-card-subtitle>
+              <p class="title font-weight-light pa-2 text-justify">
+                We envision a better world where technology helps us to bridge
+                the gap between our desire for a healthy planet and achievable +
+                actionable solutions. We hope that through education and
+                demonstrating the power of current technology, we can empower
+                communities to be fearless at solving the ocean pollution
+                problem themselves.
+              </p>
+              <v-btn
+                class="ma-3 align-self-center"
+                fab
+                outlined
+                @click="$vuetify.goTo('#five-principles')"
+              >
+                <v-icon>mdi-chevron-double-down</v-icon>
+              </v-btn>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </section>
+
+    <section id="five-principles">
+      <v-container fluid style="height: 100vh">
+        <v-layout fill-height>
+          <h1>Hi</h1>
+        </v-layout>
+      </v-container>
+    </section>
+  </v-content>
 </template>
 <script>
 export default {
-	data() {
-		return {};
-	},
+  data() {
+    return {};
+  },
 };
 </script>
