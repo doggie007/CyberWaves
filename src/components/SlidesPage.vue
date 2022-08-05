@@ -19,7 +19,7 @@
 						<v-row>
 							<v-col v-for="(item, n) in fiveFramework" :key="`btn-${n}`">
 								<v-item v-slot="{ active, toggle }" class="px-auto">
-									<v-btn small :input-value="active" @click="toggle">
+									<v-btn icon small :input-value="active" @click="toggle">
 										<!-- <v-icon>mdi-record</v-icon> -->
 										{{ n + 1 }}
 									</v-btn>

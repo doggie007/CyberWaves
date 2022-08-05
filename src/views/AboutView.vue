@@ -4,7 +4,7 @@
 		<section id="our-vision">
 			<v-container
 				fluid
-				class="pa-10"
+				class="pa-6"
 				style="
 					background-image: linear-gradient(to bottom left, #dbfcff, #fddcc356);
 				"
@@ -27,8 +27,8 @@
 								height: 'calc(100vh - ' + $vuetify.application.top + 'px)',
 							}"
 							class="rounded"
-							width="20vw"
-							min-width="300"
+							min-width="260"
+							width="25vw"
 							max-width="500"
 							transition="slide-x-transition"
 							:src="require('../assets/rocky-beach.jpg')"
@@ -45,7 +45,9 @@
 							class="rounded-tl-xl rounded-br-xl overflow-auto"
 							width="100%"
 							elevation="24"
+							min-width="270"
 							max-width="800"
+							:max-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
 							color="#274156"
 							dark
 						>
@@ -63,16 +65,14 @@
 								</v-responsive>
 							</v-card-subtitle>
 							<p
-								class="text-body-1 text-lg-h6 font-weight-light pa-5 text-justify"
+								class="text-body-2 text-sm-body-1 text-lg-h6 font-weight-light pa-5 text-justify"
 							>
 								We envision a better world where technology helps us to bridge
 								the gap between our desire for a healthy planet and achievable +
 								actionable solutions. We hope that through education and
 								demonstrating the power of current technology, we can empower
 								communities to be fearless at solving the ocean pollution
-								problem themselves. Lorem ipsum, dolor sit amet consectetur
-								adipisicing elit. Ex quam accusantium consectetur repudiandae
-								nobis voluptas fugit repellat laboriosam labore incidunt.
+								problem themselves.
 							</p>
 							<v-btn
 								class="ma-3 align-self-center"
@@ -163,12 +163,13 @@
 
 		<!-- Five principles intro -->
 		<section id="five-principles-intro">
-			<v-container fluid style="padding: 0">
+			<v-container fluid style="padding: 0" class="hidden-xs-and-down">
 				<v-divider style="background: grey"></v-divider>
+				<!-- <span class="wavey__line"></span> -->
 
 				<v-layout fill-height>
 					<v-row no-gutters>
-						<v-col cols="3">
+						<v-col cols="4">
 							<v-container
 								fill-height
 								fluid
@@ -232,8 +233,9 @@
 											style="background: whitesmoke; max-height: 100%"
 										>
 											<v-card-title
-												class="text-h5 text-sm-h3 font-weight-bold mb-3 text-uppercase"
-												>Our Belief
+												class="text-h4 text-sm-h3 font-weight-bold mb-3 text-uppercase text-left"
+												>Our <br />
+												Belief
 											</v-card-title>
 											<v-card-subtitle>
 												<v-responsive width="56">
@@ -242,7 +244,7 @@
 												</v-responsive>
 											</v-card-subtitle>
 											<p
-												class="text-body-1 text-lg-h6 font-weight-light pa-2 text-justify"
+												class="text-body-2 text-sm-body-1 text-lg-h6 font-weight-light pa-2 text-justify"
 											>
 												Follow our <strong>5x5x5 framework</strong> to
 												understand how we generate impact, beginning with
@@ -258,10 +260,11 @@
 									</v-col>
 								</v-row>
 								<v-row class="d-flex justify-center">
-									<v-col>
+									<v-col class="d-flex align-center justify-center">
 										<v-timeline
 											style="max-height: fit-content"
 											class="text-md-h6"
+											dense
 										>
 											<v-timeline-item icon="mdi-alert" fill-dot color="pink">
 												Identify the <br />
@@ -271,7 +274,6 @@
 												icon="mdi-head-lightbulb-outline"
 												fill-dot
 												color="cyan"
-												class="text-right"
 											>
 												Creating a solution via applying a <br />
 												<strong>Key Principle</strong>
@@ -286,15 +288,19 @@
 						</v-col>
 					</v-row>
 				</v-layout>
-				<v-divider style="background: grey"></v-divider>
+				<!-- <v-divider style="background: grey"></v-divider> -->
 			</v-container>
 		</section>
-		<div class="py-5"></div>
 
 		<section id="five-principles">
-			<div style="min-height: 90vh">
+			<div style="min-height: 100vh">
+				<v-responsive>
+					<v-img :src="require('../assets/waves-background.png')"></v-img>
+				</v-responsive>
+
 				<v-container
 					class="text-center text-h3 text-sm-h2 font-weight-bold mb-3 text-uppercase"
+					style="margin-top: -8%"
 				>
 					Five Framework
 					<div class="py-1"></div>
@@ -310,9 +316,10 @@
 				</div>
 			</div>
 		</section>
-		<div class="py-2"></div>
+		<div class="py-8"></div>
 	</v-content>
 </template>
+
 <script>
 import SlidesPage from "../components/SlidesPage.vue";
 export default {
