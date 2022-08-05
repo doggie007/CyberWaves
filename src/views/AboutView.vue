@@ -45,7 +45,7 @@
 							class="rounded-tl-xl rounded-br-xl overflow-auto"
 							width="100%"
 							elevation="24"
-							min-width="270"
+							min-width="230"
 							max-width="800"
 							:max-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
 							color="#274156"
@@ -65,7 +65,7 @@
 								</v-responsive>
 							</v-card-subtitle>
 							<p
-								class="text-body-2 text-sm-body-1 text-lg-h6 font-weight-light pa-5 text-justify"
+								class="text-subtitle-2 text-sm-body-1 text-lg-h6 font-weight-light pa-5 text-justify"
 							>
 								We envision a better world where technology helps us to bridge
 								the gap between our desire for a healthy planet and achievable +
@@ -295,12 +295,14 @@
 		<section id="five-principles">
 			<div style="min-height: 100vh">
 				<v-responsive>
-					<v-img :src="require('../assets/waves-background.png')"></v-img>
+					<v-img
+						:src="require('../assets/waves-background.png')"
+						style="max-height: 25vh"
+					></v-img>
 				</v-responsive>
 
 				<v-container
 					class="text-center text-h3 text-sm-h2 font-weight-bold mb-3 text-uppercase"
-					style="margin-top: -8%"
 				>
 					Five Framework
 					<div class="py-1"></div>
