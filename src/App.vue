@@ -6,6 +6,7 @@
 			temporary
 			right
 			style="position: fixed; top: 0; right: 0; overflow-y: scroll"
+			hide-on-scroll
 		>
 			<v-list nav dense>
 				<v-list-item-group class="mt-5">
@@ -25,7 +26,7 @@
 			</v-list>
 		</v-navigation-drawer>
 
-		<v-app-bar app color="white" height="80">
+		<v-app-bar hide-on-scroll app color="white" height="80">
 			<router-link to="/">
 				<v-avatar class="mr-3" color="grey lighten-5" size="70">
 					<v-img

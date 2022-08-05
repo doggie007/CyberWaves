@@ -18,14 +18,9 @@
 									class="white--text mx-auto"
 									justify="center"
 								>
-									<v-col class="white--text text-left" cols="12" tag="h1">
+									<v-col class="white--text text-start" cols="12" tag="h1">
 										<span
-											:class="[
-												$vuetify.breakpoint.smAndDown
-													? 'display-2'
-													: 'display-3',
-											]"
-											class="font-weight-light"
+											class="font-weight-light text-h4 text-sm-h3 text-md-h2"
 										>
 											WELCOME TO
 										</span>
@@ -33,18 +28,13 @@
 										<br />
 
 										<span
-											:class="[
-												$vuetify.breakpoint.smAndDown
-													? 'display-3'
-													: 'display-4',
-											]"
-											class="font-weight-black"
+											class="font-weight-black text-h3 text-sm-h2 text-md-h1"
 										>
 											CYBERWAVES
 										</span>
 										<br />
 										<div class="py-4"></div>
-										<span class="font-weight-light">
+										<span class="font-weight-light text-h6 text-sm-h5">
 											Empowering a wave of technological change to save our
 											oceans.</span
 										>
@@ -80,7 +70,7 @@
 				</v-responsive>
 
 				<v-responsive
-					class="mx-auto title font-weight-light mb-8 text-justify"
+					class="pa-2 mx-auto title font-weight-light mb-8 text-justify"
 					max-width="720"
 				>
 					We strive to raise awareness of the gravity of the

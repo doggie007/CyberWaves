@@ -1,5 +1,5 @@
 <template>
-	<v-content>
-		<h1>Learn View Page</h1>
-	</v-content>
+  <v-content>
+    <h1>Learn View Page</h1>
+  </v-content>
 </template>
