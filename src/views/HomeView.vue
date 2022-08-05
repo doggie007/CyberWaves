@@ -88,19 +88,19 @@
 						<v-avatar class="elevation-12 mb-12" size="128">
 							<v-img src=""></v-img>
 						</v-avatar>
-						<div class="text-h6">James Tcheng</div>
+						<div class="text-h6">Name Here</div>
 					</v-col>
 					<v-col>
 						<v-avatar class="elevation-12 mb-12" size="128">
 							<v-img src=""></v-img>
 						</v-avatar>
-						<div class="text-h6">James Tcheng</div>
+						<div class="text-h6">Name Here</div>
 					</v-col>
 					<v-col>
 						<v-avatar class="elevation-12 mb-12" size="128">
 							<v-img src=""></v-img>
 						</v-avatar>
-						<div class="text-h6">James Tcheng</div>
+						<div class="text-h6">Name Here</div>
 					</v-col>
 				</v-row>
 

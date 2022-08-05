@@ -67,7 +67,7 @@
 			<router-view></router-view>
 		</v-scroll-x-transition>
 
-		<v-footer dark padless class="justify-center" height="100">
+		<v-footer dark padless class="justify-center">
 			<v-card
 				flat
 				tile
@@ -89,6 +89,19 @@
 						</v-icon>
 					</v-btn>
 				</v-card-text>
+				<v-list>
+					<v-list-item-group>
+						<v-list-item
+							v-for="({ icon, link, name }, i) in links"
+							:key="i"
+							:to="link"
+						>
+							<v-list-item-title class="text-button font-weight-bold">{{
+								name
+							}}</v-list-item-title>
+						</v-list-item>
+					</v-list-item-group>
+				</v-list>
 
 				<v-card-text class="white--text text--lighten-1">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio,
